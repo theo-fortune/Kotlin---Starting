@@ -1,6 +1,7 @@
 package com.typhon.firstcreateproject
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,19 +17,26 @@ class MainActivity : AppCompatActivity() {
 		// Values that can be manipulated or mutable
 		var myExampleVarInt : Int
 
+		val myTextView: TextView = findViewById(R.id.myText)
 		val lecturerName : String = "Fortune"
-		val foundedYearOfTechFusionCamp = 2024
-		val pi: Float = 3.147f
-		var currentYear : Number = 2024
-		var isRaining : Boolean = true
-		val kotlinIsBest : Boolean = true
-		val isJavaBetter : Boolean = false
+		val foundedYearOfTechFusionCamp = 2020 //  Assignment Operator
+		val pi: Float = 3.147f // Assignment Operator
+		var currentYear : Number = 2024 // Assignment Operator
+		var isRaining : Boolean = true // Assignment Operator
+		val kotlinIsBest : Boolean = true // Assignment Operator
+		val isJavaBetter : Boolean = false // Assignment Operator
+
 
 		// Var variables can be reassigned
 		currentYear = 2025
 		isRaining = true
 		println(currentYear)
 		println(isRaining)
+
+		var ourProgrammingLanguage = "Kotlin";
+
+		val techFusionCampAge = currentYear - foundedYearOfTechFusionCamp
+		myTextView.text = currentYear.toString()
 
 		ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
 			val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 		var ourProgrammingLanguage = "Kotlin";
 
 		val techFusionCampAge = currentYear - foundedYearOfTechFusionCamp
-		myTextView.text = currentYear.toString()
+		myTextView.text = "TechFusion Camp is" + " " + techFusionCampAge.toString() + " years old"
 
 		ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
 			val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
